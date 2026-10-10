@@ -1,13 +1,13 @@
-# Ignora node_modules en cualquier carpeta (frontend y backend)
+# Ignora node_modules en cualquier carpeta
 **/node_modules/
 
-# Ignora archivos de entorno/secretos en cualquier carpeta
+# Ignora archivos de entorno/secretos
 **/.env
 **/.env.local
 
-# Ignora carpetas de compilación
+# Ignora carpetas de compilacion
 **/dist/
 **/build/
 
-# Archivos del sistema
+# Ignora archivos de sistema
 .DS_Store
