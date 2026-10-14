@@ -1,6 +1,4 @@
-/* =========================================================
-   estilos.css — Estilos para Mi Tienda
-   ========================================================= */
+
 
 * {
     margin: 0;
@@ -11,7 +9,7 @@
 body {
     font-family: 'Poppins', Arial, sans-serif;
     background-color: #f1f5f9;
-    color: #1e293b;
+    color: #3d6dba;
     line-height: 1.6;
     min-height: 100vh;
     display: flex;
@@ -191,7 +189,7 @@ textarea:focus {
 }
 
 .btn-contacto {
-    background-color: #0f172a;
+    background-color: #17680b;
     color: #ffffff;
     align-self: flex-start;
     padding: 10px 24px;
@@ -262,11 +260,13 @@ textarea:focus {
 
 .btn-eliminar {
     background-color: #fee2e2;
-    color: #dc2626;
+    color: #ff0000;
+
 }
 
 .btn-eliminar:hover {
-    background-color: #fca5a5;
+    background-color: #ef9971;
+
 }
 
 /* --- Sección Contacto --- */

@@ -18,4 +18,3 @@ connection.connect((error) => {
 );
 // exportar la conexion para reutilizarla en las rutas de servidor
 module.exports=connection
- 
