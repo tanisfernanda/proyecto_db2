@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:3000";
+const API_URL = "https://proyecto-db2.onrender.com"; // Cambia esto a la URL de tu backend desplegado
 
 // Elementos del DOM (Productos)
 const listaProductos = document.getElementById("listaProductos");
