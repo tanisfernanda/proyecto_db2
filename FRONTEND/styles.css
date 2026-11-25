@@ -47,7 +47,7 @@ body {
 }
 
 .logo strong {
-    color: #2563eb;
+    color: #16836f;
 }
 
 .nav-links {
@@ -63,7 +63,7 @@ body {
 }
 
 .nav-links a:hover {
-    color: #2563eb;
+    color: #16836f;
 }
 
 /* --- Contenido Principal --- */
@@ -82,9 +82,150 @@ main {
     color: #0f172a;
 }
 
+.encabezado-principal h2 {
+    font-size: 1.65rem;
+    color: #0f172a;
+}
+
 .encabezado-principal p {
     color: #64748b;
     font-size: 1rem;
+}
+
+/* --- Inicio --- */
+.pagina-inicio {
+    padding-top: 0;
+}
+
+.inicio-hero {
+    margin-bottom: 28px;
+    padding: 44px 42px;
+    border-radius: 16px;
+    background: linear-gradient(120deg, #123b38, #147d69);
+    box-shadow: 0 12px 26px rgba(18, 59, 56, 0.16);
+    color: #ffffff;
+}
+
+.inicio-etiqueta {
+    display: inline-block;
+    margin-bottom: 14px;
+    padding: 4px 12px;
+    border: 1px solid rgba(209, 250, 229, 0.35);
+    border-radius: 20px;
+    background: rgba(209, 250, 229, 0.12);
+    color: #d1fae5;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.inicio-hero h1 {
+    max-width: 700px;
+    color: #ffffff;
+    font-size: clamp(1.9rem, 4vw, 2.5rem);
+    line-height: 1.25;
+}
+
+.inicio-descripcion {
+    max-width: 610px;
+    margin-top: 14px;
+    color: #e2f5ef;
+    font-size: 0.96rem;
+}
+
+.inicio-acciones {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 22px;
+}
+
+.inicio-acciones .btn {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.inicio-boton-principal {
+    background-color: #26a987;
+    color: #ffffff;
+}
+
+.inicio-boton-principal:hover {
+    background-color: #218c72;
+}
+
+.inicio-boton-secundario {
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+}
+
+.inicio-boton-secundario:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.inicio-tarjetas {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+    padding-bottom: 8px;
+}
+
+.inicio-tarjeta {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 205px;
+    padding: 20px;
+    border: 1px solid #e5eeeb;
+    border-radius: 13px;
+    background-color: #ffffff;
+    box-shadow: 0 5px 16px rgba(15, 23, 42, 0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.inicio-tarjeta:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 22px rgba(15, 23, 42, 0.09);
+}
+
+.inicio-numero {
+    display: grid;
+    width: 36px;
+    height: 36px;
+    margin-bottom: 10px;
+    place-items: center;
+    border-radius: 9px;
+    background-color: #e6f5f0;
+    color: #16836f;
+    font-weight: 700;
+}
+
+.inicio-tarjeta h2 {
+    margin-bottom: 5px;
+    color: #172b28;
+    font-size: 1.04rem;
+}
+
+.inicio-tarjeta p {
+    margin-bottom: 14px;
+    color: #647672;
+    font-size: 0.86rem;
+}
+
+.inicio-tarjeta a {
+    margin-top: auto;
+    color: #16836f;
+    font-size: 0.87rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.inicio-tarjeta a:hover {
+    color: #105e50;
+    text-decoration: underline;
 }
 
 /* --- Layout del Panel (Formulario + Lista) --- */
@@ -144,8 +285,8 @@ textarea {
 
 input:focus,
 textarea:focus {
-    border-color: #2563eb;
-    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+    border-color: #16836f;
+    box-shadow: 0 0 0 3px rgba(22, 131, 111, 0.15);
 }
 
 /* Botones */
@@ -171,12 +312,12 @@ textarea:focus {
 
 .btn-guardar {
     flex: 1;
-    background-color: #2563eb;
+    background-color: #16836f;
     color: #ffffff;
 }
 
 .btn-guardar:hover {
-    background-color: #1d4ed8;
+    background-color: #105e50;
 }
 
 .btn-cancelar {
@@ -229,7 +370,7 @@ textarea:focus {
 
 .producto-precio {
     font-weight: 700;
-    color: #2563eb;
+    color: #16836f;
     font-size: 1.1rem !important;
 }
 
@@ -298,6 +439,14 @@ textarea:focus {
 
 /* --- Responsive --- */
 @media (max-width: 768px) {
+    .inicio-hero {
+        padding: 32px 24px;
+    }
+
+    .inicio-tarjetas {
+        grid-template-columns: 1fr;
+    }
+
     .panel-tienda {
         grid-template-columns: 1fr;
     }
